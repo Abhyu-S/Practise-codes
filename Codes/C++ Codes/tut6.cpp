@@ -13,16 +13,23 @@ int main(){
     
     //**********manipulators in cpp**********
     //endl is an example
-    int a=1,b=23,c=234,d=4567;
-    cout<<"The value of a is: "<<a<<endl;
-    cout<<"The value of b is: "<<b<<endl;
-    cout<<"The value of c is: "<<c<<endl;
-    cout<<"The value of d is: "<<d<<endl;
+    // int a=1,b=23,c=234,d=4567;
+    // cout<<"The value of a is: "<<a<<endl;
+    // cout<<"The value of b is: "<<b<<endl;
+    // cout<<"The value of c is: "<<c<<endl;
+    // cout<<"The value of d is: "<<d<<endl;
 
-    cout<<"The value of a with setw is: "<<setw(4)<<a<<endl;
-    cout<<"The value of b with setw is: "<<setw(4)<<b<<endl;
-    cout<<"The value of c with setw is: "<<setw(4)<<c<<endl;
-    cout<<"The value of d with setw is: "<<setw(4)<<d<<endl;
-    
+    // cout<<"The value of a with setw is: "<<setw(4)<<a<<endl;
+    // cout<<"The value of b with setw is: "<<setw(4)<<b<<endl;
+    // cout<<"The value of c with setw is: "<<setw(4)<<c<<endl;
+    // cout<<"The value of d with setw is: "<<setw(4)<<d<<endl;
+
+    //*********Operator precedence************
+    //for information about precedence and associativity go to cppreference.com 
+
+    int a=5, b=20;
+    int c = a*b+30-10/5;
+    //c= (((a*b)+30)-(10/5))
+    cout<<c;
     return 0;
 }
