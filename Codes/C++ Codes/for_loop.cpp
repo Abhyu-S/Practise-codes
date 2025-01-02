@@ -6,6 +6,6 @@ int main(){
     cout<<"How many niggers you want? "<<endl;
     cin>>n;
     for(int i=1; i<=n;i++){
-        cout<<n<<" niggers !";
+        cout<<n<<" niggers !"<<endl;
     }
 }
