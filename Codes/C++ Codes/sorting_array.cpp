@@ -2,26 +2,25 @@
 using namespace std;
 
 int main(){
-    int array[5] = {5,4,3,2,1};
+    int array[5]={4,9,1,8,3};
     int temp;
-    int k=0;
-    int min=array[0];
+    int k;
     for(int j=0; j<5; j++){
-        for(int m=k; m<5; m++){
+        int min = array[j];
+        k = j;
+        for(int m=j+1; m<5; m++){
             if(min>array[m]){
-                temp=array[j];
-                array[j]=array[m];
-                array[m]=temp;
-                min=array[k+1];
-                
+                min=array[m];
+                k=m;
             }
-        }k++;
-        
+        }
+        temp=array[j];
+        array[j]=array[k];
+        array[k]=temp;
     }
     for (int i = 0; i < 5; i++)
     {
         cout<<array[i]<<' ';
     }
-    
     return 0;
 }
