@@ -2,8 +2,12 @@
 using namespace std;
 
 int main(){
-    int n=1234;
-    n/=10;
-    cout<<n;
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+                
+    }
     return 0;
 }
