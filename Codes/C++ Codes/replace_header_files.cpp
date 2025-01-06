@@ -23,3 +23,5 @@
 //in sab ki jagah likh sakte ho
 
 #include <bits/stdc++.h>
+
+#include <stdio.h>
