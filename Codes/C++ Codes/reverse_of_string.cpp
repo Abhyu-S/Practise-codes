@@ -6,10 +6,16 @@ int main(){
     getline(cin , str);
     string sol_str;
     int len = str.size();
-    while (len-->-1)
-    {
-        sol_str += str[len];
+    for (int i = 0; i<len; i++){
+        sol_str+=str[len-1-i];
     }
-    cout << sol_str;
+    cout << sol_str<<endl;
+
+    if (str==sol_str){
+        cout<<"Palindrome";
+    }
+    else{
+        cout << "Not palindrome";
+    }
     return 0;
 }
