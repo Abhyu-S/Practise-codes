@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 void printPattern(int n)
@@ -33,7 +33,7 @@ int main()
     printPattern(n);
     return 0;
 }
-
+*/
 #include <iostream>
 using namespace std;
 
