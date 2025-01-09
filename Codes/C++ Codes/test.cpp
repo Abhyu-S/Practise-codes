@@ -1,39 +1,36 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
-    cin>>n;
-    int size=2*n - 1;
-    for (int i = 0; i<size; i++)
-    {
-        for (int j = 0; j<(size+1); j++)
-        {
-            if((i>j) || ((size-1-i)>(size-1-j)))
-            {
-                if(i<(size-1-i))
-                {
-                    cout<<n-i;
-                }
-                else
-                {
-                    cout<<n-(size-1-i);
-                }
-            }
-            else if((j>i) || ((size-1-j)>(size-1-i)))
-            {
-                if(j<(size-1-i))
-                {
-                    cout<<n-j;
-                }
-                else
-                {
-                    cout<<n-(size-1-j);
-                }
-            }       
-        }
-        cout<<endl;
+    cin >> n;
+    vector<int> list(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> list[i];
     }
+
+    vector<int> output;
+    int start = 0, end = n - 1;
+
+    while (start <= end) {
+        if (list[start] > list[end]) {
+            output.push_back(1);
+            --end;
+        } else if (list[start] < list[end]) {
+            output.push_back(2);
+            ++start;
+        } else {
+            output.push_back(0);
+            ++start;
+            --end;
+        }
+    }
+
+    for (int i = 0; i < output.size(); ++i) {
+        cout << output[i] << " ";
+    }
+    cout << endl;
+
     return 0;
 }
