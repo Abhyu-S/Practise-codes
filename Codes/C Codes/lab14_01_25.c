@@ -61,4 +61,3 @@
     // avg_n = (float)sum/iter;
     // printf("%f",avg_n);
 }
-
