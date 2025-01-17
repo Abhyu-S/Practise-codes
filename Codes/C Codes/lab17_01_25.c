@@ -8,7 +8,7 @@ int main(void){
     // far = ((float)9*c/5) + 32;
     // printf("%f", far);
 
-    /* QUES 2 */
+    /* QUES 2 */    
     // int r;
     // float pi = 3.145f,vol;
     // scanf("%d", &r);
