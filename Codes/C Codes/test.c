@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main(void){
-    char buffer[100];
-    scanf("%[^\n]%*c", &buffer);
-    printf("%s", buffer);
+    int m, n = 55;
+    float ji=   3.54;
+    m=ji/1;
+    printf("%d\n",m);
+    // printf("%f\n",k);
 }
