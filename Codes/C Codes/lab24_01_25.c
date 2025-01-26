@@ -34,9 +34,10 @@ int main(void){
 
     /* QUES 3 */
     // char buffer[100];
-    // scanf("%[^\n]%*c", &buffer);
+    // strset(buffer,'?');
+    // fgets(buffer, sizeof(buffer), stdin);
     // int vow=0, cons=0;
-    // for(int i=0; i<100; i++){
+    // for(int i=0; i<sizeof(buffer); i++){
     //     if(((buffer[i]>64)&&(buffer[i]<91)) || ((buffer[i]>96)&&(buffer[i]<123))){
     //         if((buffer[i]=='A')||(buffer[i]=='E')||(buffer[i]=='I')||(buffer[i]=='O')||(buffer[i]=='U')||(buffer[i]=='a')||(buffer[i]=='e')||(buffer[i]=='i')||(buffer[i]=='o')||(buffer[i]=='u')){
     //             vow+=1;
