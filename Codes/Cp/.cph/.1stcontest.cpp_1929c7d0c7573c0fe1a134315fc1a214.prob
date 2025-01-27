@@ -1,0 +1,1 @@
+{"name":"Local: 1stcontest","url":"c:\\Users\\VICTUS\\vs items\\Codes\\Cp\\1stcontest.cpp","tests":[{"id":1737908229529,"input":"5\n1\n000\n1001\n10101\n01100101011101","output":"1\n0\n2\n3\n8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\VICTUS\\vs items\\Codes\\Cp\\1stcontest.cpp","group":"local","local":true}

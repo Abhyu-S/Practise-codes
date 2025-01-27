@@ -1,30 +1,24 @@
-#include <bits\stdc++.h>
+#include <iostream>
 using namespace std;
 
-const int N=2010, M = 2010;
-int cards[N][M];
-void sorting(int arr){
-
-}
-
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        int n, m;
-        cin>>n>>m;
-        for(int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
-                cin>>cards[i][j];
-            }
-        }
-        for(int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
-                cout<<cards[i][j]<<' ';
-            }
-            cout<<endl;
-        }
-    
+    int  n;
+    cin>>n;
+    int arr[n];
+    long long sum=0;
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+        sum+=arr[i];
     }
-    return -1;
+    int q;
+    while(q--){
+        int L,R;
+        long long sum=0;
+        cin>>L>>R;
+        for(int i=L; i<=R; i++){
+            sum+=arr[i];
+        }
+        cout<<sum;
+    }
+    return 0;
 }
