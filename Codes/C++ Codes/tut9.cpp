@@ -13,8 +13,6 @@ int main(){
     
     for (int i = 0; i < 6; i++)
     {
-        /* code */
-        
         if (i==2){
             continue;//for only that iteration continue ke niche likhe hue sare statements mat run karo and go to next iteration
         }

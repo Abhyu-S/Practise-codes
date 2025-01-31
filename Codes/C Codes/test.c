@@ -1,14 +1,13 @@
 #include <stdio.h>
-int main(){
-    int n;
-    int octal =0;
-    int power=1;
 
-    scanf("%d",&n);
-    while(n>0){
-        octal+=n%8*power;
-        power*=10;
-        n=n/8;
+int main(void){
+    int a=5,b=10;
+    float div=b/a;
+    int d=b/a;
+    if(div==d){
+        printf("Yes");
     }
-    printf("0o%d",octal);
+    else{
+        printf("No");
+    }
 }

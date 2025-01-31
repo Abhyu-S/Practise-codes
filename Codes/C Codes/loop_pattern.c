@@ -5,7 +5,7 @@ int main()
 {
     char name[20];
     printf("Enter your name : ");
-    scanf("%s",name);
+    scanf("%[^\n]%*c",name);
     for(int i=0; i<strlen(name); i++)
     {
         for(int j=0; j<=i; j++)
@@ -16,7 +16,7 @@ int main()
             }
             else
             {
-                printf("_");
+                printf(" ");
             }
         }
         printf("\n");
