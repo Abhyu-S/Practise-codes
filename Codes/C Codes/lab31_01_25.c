@@ -42,30 +42,32 @@ int main(void){
     // }
 
     /* QUES 4 */
-    // int a,b,small,large;
-    // scanf("%d %d", &a, &b);
-    // if(a<b){
-    //     small=a;
-    //     large=b;
-    // }
-    // else{
-    //     small=b;
-    //     large=a;
-    // }
-    // float d;
-    // int div;
-    // int i=1;
-    // while(i<=small){
-    //     div=small/i;
-    //     d=(float)small/i;
-    //     if(div==d){
-    //         int tempi=large/div;
-    //         float tempf=(float)large/div;
-    //         if(tempi==tempf){
-    //             printf("gcd of %d and %d is: %d",a,b,div);
-    //             break;
-    //         }
-    //     }
-    //     i++;
-    // }
+    int a,b,small,large;
+    scanf("%d %d", &a, &b);
+    if(a<b){
+        small=a;
+        large=b;
+    }
+    else{
+        small=b;
+        large=a;
+    }
+    float d;
+    int div;
+    int i=1;
+    while(i<=small){
+        div=small/i;
+        d=(float)small/i;
+        printf("%d\t%f\n", div,d);
+        if(div==d){
+            int tempi=large/div;
+            float tempf=(float)large/div;
+            printf("%d\t%f\n", tempi,tempf);
+            if(tempi==tempf){
+                printf("gcd of %d and %d is: %d",a,b,div);
+                break;
+            }
+        }
+        i++;
+    }
 }

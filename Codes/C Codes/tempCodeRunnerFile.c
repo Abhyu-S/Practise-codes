@@ -1,1 +1,1 @@
-printf("gcd %d ",div);
+empi=large/di
