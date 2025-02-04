@@ -1,1 +1,1 @@
-{"name":"Local: test","url":"c:\\Users\\VICTUS\\vs items\\Codes\\C Codes\\test.c","tests":[{"id":1738297778372,"input":"04/10/2004\n31/01/2025","output":"7424"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\VICTUS\\vs items\\Codes\\C Codes\\test.c","group":"local","local":true}
+{"name":"Local: test","url":"c:\\Users\\VICTUS\\vs items\\Codes\\C Codes\\test.c","tests":[],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\VICTUS\\vs items\\Codes\\C Codes\\test.c","group":"local","local":true}
