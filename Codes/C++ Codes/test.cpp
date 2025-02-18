@@ -1,17 +1,31 @@
-#include<iostream>
-#include<math.h>
+#include <bits\stdc++.h>
+
 using namespace std;
 
-int main(void){
-    int n;
-    cout<<"Enter a number: ";
-    cin>>n;
 
-    for (int i=1; i<2*n; i++){
-        for( int j=1; j<2*n; j++){
-            int element = n-min(min(i,j),min(2*n-i,2*n-j))+1;
-            cout<<element<<" ";
+int main(void){
+    int t;
+    cin >> t;
+    while(t--){
+        string s;
+        cin >> s;
+        string half1, half2;
+        for(int i=0; i<(s.length()/2); i++){
+            half1+=s[i];
         }
-        cout<<endl;
+        for(int i=(s.length()/2); i<s.length(); i++){
+            half2+=s[i];
+        }
+        for(int i=0; i<(s.length()/2); i++){
+            if(half1[i] != half2[i]){
+                
+            }
+        }
+        if(half1 == half2){
+            cout << "Yes" << endl;
+        }
+        else{
+            cout << "No";
+        }
     }
 }

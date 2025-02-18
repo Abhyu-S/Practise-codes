@@ -1,1 +1,1 @@
-{"name":"Local: test","url":"c:\\Users\\VICTUS\\vs items\\Codes\\C Codes\\test.c","tests":[],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\VICTUS\\vs items\\Codes\\C Codes\\test.c","group":"local","local":true}
+{"name":"Local: test","url":"c:\\Users\\VICTUS\\vs items\\Codes\\C Codes\\test.c","tests":[{"id":1739124009716,"input":"2 3\n3 2\n1 2 3\n4 5 6\n7 8\n9 10\n11 12","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\VICTUS\\vs items\\Codes\\C Codes\\test.c","group":"local","local":true}

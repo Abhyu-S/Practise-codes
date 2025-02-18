@@ -1,0 +1,32 @@
+//interesting, sum of elements in a 2-d array from (a,b) to (c,d) [1-based indices]
+#include<iostream>
+using namespace std;
+
+const int N=1e3+7;
+int arr[N][N];
+long long pf[N][N];
+
+int main(void){
+    int n;
+    cin >> n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            cin >> arr[i][j];
+            pf[i][j] = arr[i][j] + pf[i-1][j] + pf[i][j-1] - pf[i-1][j-1];
+        }
+    }
+    int q;
+    cin >> q;
+    while(q--){
+        // long long int sum=0;
+        int a, b, c, d;
+        cin >> a >> b >> c >> d;
+        cout << pf[c][d] - pf[a-1][d] - pf[c][b-1] + pf[a-1][b-1] << endl; //2-D arr prefix sum
+        // for(int i=a; i<=c; i++){
+        //     for(int j=b; j<=d; j++){
+        //         sum+=arr[i][j];
+        //     }
+        // }
+        // cout << sum << endl;
+    }
+}

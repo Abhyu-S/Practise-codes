@@ -1,0 +1,1 @@
+{"name":"Local: 3rdContest","url":"c:\\Users\\VICTUS\\vs items\\Codes\\Cp\\3rdContest.cpp","tests":[{"id":1739893784289,"input":"3\n10\n0 1 0 0 0 0 1 1\n3\n1\n10\n0 1 1 1 1 1 0 1","output":"YES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\VICTUS\\vs items\\Codes\\Cp\\3rdContest.cpp","group":"local","local":true}

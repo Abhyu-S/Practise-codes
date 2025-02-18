@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+const int N=1e5+7;
+int a[N];
+int hsh[N];
+
+int main(void){
+    int n;
+    cin >> n;
+    for(int i=1; i<=n; i++){
+        cin >> a[i];
+        hsh[i]=a[i];
+        hsh[i]+=hsh[i-1]; // ith index tak ke number ka sum store krke rakha tha
+    }
+    int q;
+    cin >> q;
+    while(q--){
+        int L, R;
+        cin >> L >> R;
+        cout << hsh[R]-hsh[L-1]<< endl; //Prefix sum technique
+    }
+}

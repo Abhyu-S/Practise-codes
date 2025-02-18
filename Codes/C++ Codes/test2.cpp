@@ -1,27 +1,29 @@
 #include <bits\stdc++.h>
 using namespace std;
 
+int fact(int &k){
+    int fact=1;
+    for(int i=1; i<=k; i++){
+        fact*=i;
+    }
+    return fact;
+}
+
 int main(){
-    int n, mul_4=0, mul_3=0, mul_1=0;
-    cin>>n;
-    if(n%4 == 1){
-        mul_4 = n/4;
-        mul_1 = 1;
-        cout<<"Number of 4rs. coin(s) : "<<mul_4<<" and 1 more coin of 1rs."<<endl<<"OR";
-        cout<<"Number of 4rs. coin(s) : "<<mul_4-2<<" and 3 more coin of 3rs."<<endl;
+    int n;
+    cin >> n;
+    int arr[n][n];
+    for(int i=0; i<n; i++){
+        for(int j=0; j<=i; j++){
+            int m=i-j;
+            arr[i][j]=fact(i)/(fact(j)*fact(m));
+        }
     }
-    else if(n%4 == 3){
-        mul_4 = n/4;
-        mul_3 = 1;
-        cout<<"Number of 4rs. coin(s) : "<<mul_4<<" and 1 more coin of 3rs."<<endl;
-    }
-    else if(n%4 ==2){
-        mul_4 = (n/4)-1;
-        cout<<"Number of 4rs. coin(s) : "<<mul_4<<" and 2 more coins of 3rs."<<endl;
-    }
-    else{
-        mul_4 = n/4;
-        cout<<"Number of 4rs. coin(s) : "<<mul_4<<endl;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<=i; j++){
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
     }
     return 0;
 }
