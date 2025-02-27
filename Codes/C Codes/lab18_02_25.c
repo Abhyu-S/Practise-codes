@@ -113,28 +113,28 @@ int main() {
     // printf("Largest element: %d\t Row: %d, Column: %d\nSmallest element: %d\tRow: %d, Column: %d", large, li, lj, small, si, sj);
 
     /* QUES 6 */
-    int n;
-    scanf("%d", &n);
-    int arr[n][n];
-    for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
-            scanf("%d", &arr[i][j]);
-        }
-    }
-    int flag=1;
-    for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
-            if(i!=j){
-                if(arr[i][j]!=arr[j][i]){
-                    flag=0;
-                }
-            }
-        }
-    }
-    if(flag){
-        printf("Symmetric matrix");
-    }
-    else{
-        printf("Unsymmetric matrix");
-    }
+    // int n;
+    // scanf("%d", &n);
+    // int arr[n][n];
+    // for(int i=0; i<n; i++){
+    //     for(int j=0; j<n; j++){
+    //         scanf("%d", &arr[i][j]);
+    //     }
+    // }
+    // int flag=1;
+    // for(int i=0; i<n; i++){
+    //     for(int j=0; j<n; j++){
+    //         if(i!=j){
+    //             if(arr[i][j]!=arr[j][i]){
+    //                 flag=0;
+    //             }
+    //         }
+    //     }
+    // }
+    // if(flag){
+    //     printf("Symmetric matrix");
+    // }
+    // else{
+    //     printf("Unsymmetric matrix");
+    // }
 }
