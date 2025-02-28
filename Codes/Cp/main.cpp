@@ -2,22 +2,8 @@
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        string s;
-        cin >> n >> s;
-        
-        int ctr1 = count(s.begin(), s.end(), '-');
-        int ctr2 = count(s.begin(), s.end(), '_');
-
-        if (ctr1 < 2 || ctr2 < 1) {
-            cout << 0 << endl;
-        } else {
-            long long combinations = (1LL * ctr1 * (ctr1-1)/2) * ctr2;
-            cout << combinations << endl;
-        }
+    for(int i=1; i<1; i++){
+        printf("1sa");
     }
     return 0;
 }
