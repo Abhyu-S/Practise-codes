@@ -2,33 +2,27 @@
 #include <vector>
 using namespace std;
 
-// Function to compute XOR sum up to index i
-int computeXOR(int i, const vector<int>& vec, int n) {
-    if (i < n) {
-        return vec[i]; // If within initial range, return directly
-    }
-    int cycle_length = n; // Length of repeating cycle
-    return vec[i % cycle_length]; // Use modular arithmetic to find value
-}
-
-int main() {
+int main(){
     int t;
-    cin >> t;
-    while (t--) {
+    scanf("%d", &t);
+    while(t--){
         int n;
-        long long l, r;
-        cin >> n >> l >> r;
-        vector<int> vec(n);
-        for (int i = 0; i < n; i++) {
-            cin >> vec[i];
+        unsigned long long l, r;
+        scanf("%d %d %d", &n, &l, &r);
+        vector<int>vec;
+        for(int i=0; i<n; i++){
+            int k;
+            scanf("%d", &k);
+            vec.push_back(k);
         }
-
-        // Compute sum in range [l, r]
-        long long sum = 0;
-        for (long long i = l - 1; i <= r - 1; i++) { // Convert to 0-based indexing
-            sum += computeXOR(i, vec, n);
+        for(int i=n; i<r; i++){
+            int a = 0;
+            for(int j=0; j<=(i/2); j++){
+                a=a^vec[i];
+            }
+            vec.push_back(a);
         }
-        cout << sum << endl;
+        printf("%d\n", vec[l]);
     }
     return 0;
 }

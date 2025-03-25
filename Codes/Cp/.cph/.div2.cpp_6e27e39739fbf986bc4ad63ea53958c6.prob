@@ -1,0 +1,1 @@
+{"name":"Local: div2","url":"c:\\Users\\VICTUS\\vs items\\Codes\\Cp\\div2.cpp","tests":[{"id":1742708707945,"input":"3\n1 2 4\n2 1 4\n2 2 1","output":"YES\nNO\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\VICTUS\\vs items\\Codes\\Cp\\div2.cpp","group":"local","local":true}
