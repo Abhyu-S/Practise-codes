@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-struct part{
-	int number;
-	char name[101];
-	int on_hand;
-} part1 = {528, "Disk Drive", 10},
-  part2 = {914, "Printer cable", 5};
+// struct part{
+// 	int number;
+// 	char name[101];
+// 	int on_hand;
+// } part1 = {528, "Disk Drive", 10},
+//   part2 = {914, "Printer cable", 5};
 
-void change_part(struct part p){
-	p.number = 999;
-	printf("Inside func (call by value): %d\n", p.number);
+// void change_part(struct part p){
+// 	p.number = 999;
+// 	printf("Inside func (call by value): %d\n", p.number);
 }
 
 // int main(){
@@ -18,6 +18,8 @@ void change_part(struct part p){
 // 	printf("Outside func: %d\n", p1.number);
 // 	return 0;
 // }
+
+
 
 int main(){
 	// char *planets[]={"Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Neptune", "Uranus"};
@@ -42,8 +44,8 @@ int main(){
 	// printf("Value of x using q: %d\n", **q);
 	// printf("Value of x using r: %d\n", ***r);
 	
-	struct kilo {int a[10]; } a1={1,3,4,8}, a2;
-	printf(k.a1[1]);
-	a1=a2;
-	printf(a2);
+	// struct kilo {int a[10]; } a1={1,3,4,8}, a2;
+	// printf(k.a1[1]);
+	// a1=a2;
+	// printf(a2);
 }
