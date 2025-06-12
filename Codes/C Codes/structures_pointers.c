@@ -10,7 +10,7 @@
 // void change_part(struct part p){
 // 	p.number = 999;
 // 	printf("Inside func (call by value): %d\n", p.number);
-}
+// }
 
 // int main(){
 // 	struct part p1 = {123, "Bolt", 50};
